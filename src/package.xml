@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enhanced PageBlock Table</fullName>
+    <description>A Pageblock table component with enhanced capabilities like Sorting, pagination etc.</description>
+    <types>
+        <members>EnhancedPageBlockTable</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>jQuery_BlogForce9_162</members>
+        <members>jqQueryTableSorter</members>
+        <name>StaticResource</name>
+    </types>
+    <version>27.0</version>
+</Package>

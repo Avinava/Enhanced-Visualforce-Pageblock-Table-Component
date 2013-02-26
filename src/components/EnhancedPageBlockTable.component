@@ -1,0 +1,73 @@
+<apex:component selfClosing="true" layout="block" >
+    <!--
+    Author : avidev9
+    Email : avidev9@gmail.com
+    Name :  Enhanced PageBlock Table.
+    Date : 23-Feb-2013
+    -->
+    <apex:attribute type="SObject[]" description="List of records that needs to be displayed in the table" name="sObjList" required="true"/>
+    <apex:attribute type="String[]" description="List of field api name to be displayed as column" name="fieldList" required="true"/>
+    <!--Inculding the required jQuery Files--->
+    <apex:includeScript value="{!URLFOR($Resource.jQuery_BlogForce9_162, 'js/jquery-1.6.2.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.jqQueryTableSorter, 'jquery.tablesorter.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.jqQueryTableSorter, 'jquery.tablesorter.pager.js')}"/>
+    <script>
+        $j = jQuery.noConflict();
+        $j(document).ready(function() 
+            { 
+                //enable sorting in pageblock tables using table sorter plugin
+                $j(".BlogForce9Table").tablesorter().tablesorterPager({container: $j("#pager")});
+ 
+                /*
+                $j('.BlogForce9Table.headerRow').click(function(){
+                    //on header click remove the styling
+                    //$j('.dataRow').removeClass('last');
+                    
+                });
+                */
+                
+                $j(".BlogForce9Table").bind("sortEnd",function(e) {
+                    $j('.mySort').remove();
+                    $j('.headerSortDown').children().append('<apex:image value="/s.gif" styleClass="sortDesc mySort"  alt="Sorted Descending" title="Sorted Descending" /> ');
+                    $j('.headerSortUp').children().append('<apex:image value="/s.gif" styleClass="sortAsc mySort"  alt="Sorted Ascending" title="Sorted Ascending" />');
+                });
+            } 
+        ); 
+        
+        
+    </script>
+    <apex:pageBlockSection columns="1">
+        <apex:pageBlockTable value="{!sObjList}" var="obj" id="myTableBlogForce9" styleClass="BlogForce9Table">
+            <apex:repeat value="{!fieldList}" var="f">
+                <apex:column value="{!obj[f]}"/>
+            </apex:repeat>
+            <apex:facet name="footer">
+                
+            </apex:facet>
+        </apex:pageBlockTable>
+        <div class="paginator" id="pager">
+           <span class="prevNextLinks">            
+                <span class="prevNext">
+                    <img src="/s.gif" class="first" style="cursor:pointer"/>
+                </span>
+                
+                <span class="prevNext">
+                    <img src="/s.gif" class="prev" style="cursor:pointer"/>Previous
+                </span>
+                
+                <span class="prevNext">
+                    Next<img src="/s.gif" class="next" style="cursor:pointer"/>        
+                </span>
+                <span class="prevNext">
+                    <img src="/s.gif" class="last" style="cursor:pointer"/>
+                </span>            
+            </span>
+            <select class="pagesize">
+                <option selected="selected"  value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option  value="40">40</option>
+            </select>       
+         </div>
+    </apex:pageBlockSection>
+</apex:component>
