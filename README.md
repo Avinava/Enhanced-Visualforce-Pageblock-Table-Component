@@ -9,8 +9,8 @@ What's New?
 
 Features
 - 
- -Adds sorting capability to your pageblock table without any extra coding
- -Adds pagination capability without any coding
+ * Adds sorting capability to your pageblock table without any extra coding
+ * Adds pagination capability without any coding
 
 
 Version
