@@ -7,6 +7,12 @@ What's New?
 -
 - Added sorting capability to the pageblock table.
 
+Features
+- 
+ -Adds sorting capability to your pageblock table without any extra coding
+ -Adds pagination capability without any coding
+
+
 Version
 -
 1.0
@@ -17,6 +23,6 @@ https://blogforce9dev-developer-edition.ap1.force.com/EnhancedPageBlockTableDemo
 
 Status
 -
- - Under Development
+ - Under Development, Syntax and parameters can change
   
     
