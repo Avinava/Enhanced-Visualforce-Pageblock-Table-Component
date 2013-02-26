@@ -9,8 +9,11 @@ What's New?
 
 Version
 -
-
 1.0
+
+Demo
+-
+https://blogforce9dev-developer-edition.ap1.force.com/EnhancedPageBlockTableDemo
 
 Status
 -
