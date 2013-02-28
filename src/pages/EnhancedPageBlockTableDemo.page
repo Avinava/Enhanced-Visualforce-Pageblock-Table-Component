@@ -1,0 +1,19 @@
+<apex:page controller="EnhancedPageBlockTableDemo_Con" tabStyle="Account" sidebar="false">
+    <apex:sectionHeader title="Enhanced PageBlock Table" subtitle="Enhanced PageBlock Table Using Jquery And Jquery Table Sorter Plugin."/>
+    
+    <apex:panelGrid style="padding:4px;margin-bottom:10px;border-radius:5px" columns="1" bgcolor="#DCFBDC" width="100%" >
+        
+        <ul>
+            <li>Click on any of the Column Header to sort the Pageblock Table.</li>
+            <li>This page uses jquery table sorter plugin for client side data sorting.</li>
+            <li>There is a inbuilt native like paginator.</li>
+            <li>This implementation is in very naive stage,<s> will be updating the same to show arrows instead of a "*" to show the currently sorted column</s> <b style="color:red">Updated to show the legendary up and down arrows</b>.</li>
+            <li>To use the <b>EnhancedPageBlockTable</b> component just pass List of records in <b>sObjList</b> param and List of field to be displayed in the <b>fieldList</b> param.</li>
+        </ul>
+    </apex:panelGrid>
+  
+    <apex:pageBlock title="List Of Accounts">
+        <c:EnhancedPageBlockTable sObjList="{!accounts}" fieldList="{!fields}"/>      
+            
+    </apex:pageBlock>
+</apex:page>

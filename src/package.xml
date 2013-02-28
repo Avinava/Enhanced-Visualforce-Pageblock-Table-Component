@@ -3,8 +3,16 @@
     <fullName>Enhanced PageBlock Table</fullName>
     <description>A Pageblock table component with enhanced capabilities like Sorting, pagination etc.</description>
     <types>
+        <members>EnhancedPageBlockTableDemo_Con</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
         <members>EnhancedPageBlockTable</members>
         <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>EnhancedPageBlockTableDemo</members>
+        <name>ApexPage</name>
     </types>
     <types>
         <members>jQuery_BlogForce9_162</members>

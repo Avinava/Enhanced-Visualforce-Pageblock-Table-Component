@@ -18,13 +18,7 @@
                 //enable sorting in pageblock tables using table sorter plugin
                 $j(".BlogForce9Table").tablesorter().tablesorterPager({container: $j("#pager")});
  
-                /*
-                $j('.BlogForce9Table.headerRow').click(function(){
-                    //on header click remove the styling
-                    //$j('.dataRow').removeClass('last');
-                    
-                });
-                */
+              
                 
                 $j(".BlogForce9Table").bind("sortEnd",function(e) {
                     $j('.mySort').remove();
