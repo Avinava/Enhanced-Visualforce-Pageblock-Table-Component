@@ -1,5 +1,9 @@
  Enhanced-Pageblock-Table
 =========
+<a href="https://githubsfdeploy.herokuapp.com?owner=avinava&repo=Enhanced-Visualforce-Pageblock-Table-Component">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
+</a>
 
 [This component is deprecated you can check the PageBlockTableEnhancer and PageBlockTableEnhancerADV]
 
