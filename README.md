@@ -1,4 +1,4 @@
- Enhanced-Pageblock-Table
+ Enhanced-Pageblock-Table Uses the PageBlockTableEnhancer
 =========
 <a href="https://githubsfdeploy.herokuapp.com?owner=avinava&repo=Enhanced-Visualforce-Pageblock-Table-Component">
   <img alt="Deploy to Salesforce"
